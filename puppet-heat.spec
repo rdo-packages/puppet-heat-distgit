@@ -22,7 +22,7 @@ Requires:       puppet >= 2.7.0
 Puppet module for OpenStack Heat
 
 %prep
-%setup -q -n %{name}-%{version}
+%setup -q -n openstack-heat-%{version}
 
 find . -type f -name ".*" -exec rm {} +
 find . -size 0 -exec rm {} +
