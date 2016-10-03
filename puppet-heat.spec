@@ -1,4 +1,8 @@
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
+
+%{?dlrn: %global tarsources %{name}-%{upstream_version}}
+%{!?dlrn: %global tarsources openstack-ceph-%{upstream_version}}
+
 Name:           puppet-heat
 Version:        9.4.0
 Release:        1%{?dist}
@@ -22,7 +26,7 @@ Requires:       puppet >= 2.7.0
 Puppet module for OpenStack Heat
 
 %prep
-%setup -q -n openstack-heat-%{version}
+%setup -q -n %{tarsources}
 
 find . -type f -name ".*" -exec rm {} +
 find . -size 0 -exec rm {} +
