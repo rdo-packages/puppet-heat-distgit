@@ -1,3 +1,8 @@
+%{!?upstream_version: %global upstream_version %{version}%{?milestone}}
+
+%{?dlrn: %global tarsources %{name}-%{upstream_version}}
+%{!?dlrn: %global tarsources openstack-ceph-%{upstream_version}}
+
 Name:           puppet-heat
 Version:        XXX
 Release:        XXX
@@ -6,7 +11,7 @@ License:        Apache-2.0
 
 URL:            https://launchpad.net/puppet-heat
 
-Source0:        https://tarballs.openstack.org/%{name}/%{name}-%{version}.tar.gz
+Source0:        https://tarballs.openstack.org/%{name}/%{name}-%{upstream_version}.tar.gz
 
 BuildArch:      noarch
 
@@ -21,7 +26,7 @@ Requires:       puppet >= 2.7.0
 Puppet module for OpenStack Heat
 
 %prep
-%setup -q -n %{name}-%{version}
+%setup -q -n %{tarsources}
 
 find . -type f -name ".*" -exec rm {} +
 find . -size 0 -exec rm {} +
