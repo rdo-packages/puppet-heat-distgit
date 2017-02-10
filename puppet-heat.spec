@@ -1,3 +1,4 @@
+%{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 Name:           puppet-heat
 Version:        XXX
 Release:        XXX
@@ -6,7 +7,7 @@ License:        ASL 2.0
 
 URL:            https://launchpad.net/puppet-heat
 
-Source0:        https://tarballs.openstack.org/%{name}/%{name}-%{version}.tar.gz
+Source0:        https://tarballs.openstack.org/%{name}/%{name}-%{upstream_version}.tar.gz
 
 BuildArch:      noarch
 
