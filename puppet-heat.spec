@@ -1,6 +1,6 @@
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 Name:           puppet-heat
-Version:        11.5.0
+Version:        11.6.0
 Release:        1%{?dist}
 Summary:        Puppet module for OpenStack Heat
 License:        ASL 2.0
@@ -46,6 +46,9 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/heat/
 
 
 %changelog
+* Thu May 16 2019 RDO <dev@lists.rdoproject.org> 11.6.0-1
+- Update to 11.6.0
+
 * Fri Jan 19 2018 RDO <dev@lists.rdoproject.org> 11.5.0-1
 - Update to 11.5.0
 
