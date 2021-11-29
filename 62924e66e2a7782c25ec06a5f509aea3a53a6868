@@ -1,0 +1,8 @@
+Code-Review+2: Alfredo Moralejo <amoralej@redhat.com>
+Workflow+1: Alfredo Moralejo <amoralej@redhat.com>
+Verified+2: Zuul CI <zuul@review.rdoproject.org>
+Submitted-by: Zuul CI <zuul@review.rdoproject.org>
+Submitted-at: Mon, 29 Nov 2021 12:59:31 +0000
+Reviewed-on: https://review.rdoproject.org/r/c/puppet/puppet-heat-distgit/+/36932
+Project: puppet/puppet-heat-distgit
+Branch: refs/heads/ussuri-rdo
