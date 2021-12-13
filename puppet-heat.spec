@@ -68,3 +68,4 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/heat/
 
 
 
+# REMOVEME: error caused by commit https://opendev.org/openstack/puppet-heat/commit/bc69197a0caefb0a6abf531d0d780035117ef8d9
